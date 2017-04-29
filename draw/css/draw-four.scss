@@ -1,0 +1,80 @@
+@import "base.css";
+@import "mixin";
+body {
+	width: 100%;
+	height: 100%;
+	background: #f9f1cd;
+	.all {
+		width: 640px;
+		height: 100%;
+		margin: 0 auto;
+		.welfare {
+			width: 100%;
+			height: 323px;
+			background: url(../imges/banner-cj.jpg)center top no-repeat;
+		}
+		.neck {
+			text-align: center;
+			font-size: 24px;
+			font-size: 2.4rem;
+			color: #0d8093;
+		}
+		ul {
+			li {
+				@include br4(20px);
+				background: #fff;
+				overflow: hidden;
+				padding: 15px;
+				color: #333333;
+				font-size: 14px;
+				margin: 7px 0;
+				.word {
+					text-align: center;
+				}
+				.word-left {
+					float: left;
+				}
+				.word-right {
+					float: right;
+					color: #999999;
+					font-size: 12px;
+					font-size: 1.2rem;
+				}
+			}
+		}
+		.title {
+			width: 98%;
+			text-align: center;
+			font-size: 16px;
+			color: #F00;
+		}
+		.return {
+			width: 90%;
+			margin: 10px auto 20px auto;
+			background: #FF4200;
+			text-decoration: none;
+			padding: 15px 0;
+			text-align: center;
+			border-radius: 20px;
+			color: #fff;
+			letter-spacing: 12px;
+			font-size: 14px;
+			font-size: 1.4rem;
+		}
+	}
+}
+
+@media screen and (max-width:970px) {
+	body {
+		.all {
+			width: 100%;
+			height: 100%;
+			margin: 0 auto;
+			.welfare {
+				width: 100%;
+				height: 30%;
+				background-size: 100% 100%;
+			}
+		}
+	}
+}
